@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexo — Tu patrimonio, en una sola pantalla</title>
+<meta name="description" content="Nexo conecta tus brokers, cripto, CETES y bienes raíces en un solo panel. Ves tu patrimonio real, neto de comisiones. Solo lectura, sin conflicto de interés.">
+<meta property="og:title" content="Nexo — Tu patrimonio, en una sola pantalla">
+<meta property="og:description" content="GBM, Bitso, CETES, tu Afore y tu broker gringo. Un solo lugar. Patrimonio real, neto de comisiones.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='30' cy='50' r='20' fill='%232563eb'/><circle cx='70' cy='50' r='20' fill='%2310b981'/><rect x='45' y='44' width='10' height='12' fill='%230f172a'/></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark" aria-hidden="true"></span>
+      Nexo
+    </a>
+    <nav class="nav-links">
+      <a href="#problema">El problema</a>
+      <a href="#como">Cómo funciona</a>
+      <a href="#producto">Qué verás</a>
+      <a href="#precios">Precios</a>
+      <a href="#faq">Preguntas</a>
+    </nav>
+    <a href="#lista" class="btn btn-sm">Unirme a la lista</a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <span class="badge">Lista de espera abierta · México</span>
+    <h1>Tu patrimonio está disperso en <span class="hl">5 apps</span>.<br>Ábrelo en una sola pantalla.</h1>
+    <p class="lead">
+      GBM para las acciones, Bitso para el cripto, otra app para CETES, el Afore en otro lado,
+      el banco en otro... y un Excel que lleva tres meses sin actualizarse.
+      <strong>Nexo los reúne y te muestra cuánto tienes de verdad.</strong>
+    </p>
+
+    <form class="waitlist" id="waitlist-form" novalidate>
+      <input type="email" id="email" name="email" placeholder="tu@correo.com" required autocomplete="email" aria-label="Tu correo electrónico">
+      <button type="submit" class="btn btn-lg">Quiero mi lugar</button>
+    </form>
+    <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+
+    <ul class="trust">
+      <li>Solo lectura</li>
+      <li>Sin comisiones por operación</li>
+      <li>No te vemos productos</li>
+      <li>Cancela cuando quieras</li>
+    </ul>
+  </div>
+</section>
+
+<!-- EL PROBLEMA -->
+<section class="section" id="problema">
+  <div class="container">
+    <span class="kicker">Suena familiar</span>
+    <h2>Cinco aplicaciones, una hoja de Excel y ninguna certeza</h2>
+    <div class="grid-4">
+      <article class="card">
+        <div class="card-ico">📱</div>
+        <h3>Tu dinero en 5 lugares</h3>
+        <p>GBM, Bitso, CETES, el banco, el broker en EE.&nbsp;UU. Cada uno con su app, su contraseña y su idea distinta de tus finanzas.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">📊</div>
+        <h3>El Excel que ya miente</h3>
+        <p>Lo actualizaste hace tres meses. Los precios cambiaron, hubo dividendos, compraste algo. Tu número no es tu patrimonio.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">🫥</div>
+        <h3>Tu broker esconde el rendimiento real</h3>
+        <p>Te muestra la ganancia bruta. No te muestra la TIR ponderada por el dinero que metiste, ni el costo de las comisiones.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">🧾</div>
+        <h3>Marzo llega y empieza el caos</h3>
+        <p>Tu contador te pide plusvalías, minusvalías y estados de cuenta. Tú los descargas uno por uno, a mano.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section class="section section-alt" id="como">
+  <div class="container">
+    <span class="kicker">Cómo funciona</span>
+    <h2>Cuatro niveles de conexión, sin pedirte tu contraseña</h2>
+    <p class="section-lead">
+      Tu banco y tu broker nunca te dan su <em>password</em> a otra app. Nexo tampoco lo pide.
+      Cada activo se conecta por el canal que le corresponde.
+    </p>
+
+    <div class="levels">
+      <div class="level">
+        <span class="level-tag lvl-a">Nivel A</span>
+        <h3>Brokers de EE.&nbsp;UU. → automático</h3>
+        <p>Conexión directa con proveedores como Plaid o SnapTrade en modo <strong>solo lectura</strong>. Recibimos posiciones y saldos con un token seguro. Tú nunca nos das tu contraseña.</p>
+      </div>
+      <div class="level">
+        <span class="level-tag lvl-b">Nivel B</span>
+        <h3>Cripto → API key de solo lectura</h3>
+        <p>Bitso, Binance y similares. Pegas una clave que <strong>solo puede leer</strong>, nunca mover dinero. Tus saldos se actualizan solos.</p>
+      </div>
+      <div class="level">
+        <span class="level-tag lvl-c">Nivel C</span>
+        <h3>GBM, CETES, Afore → importación simple</h3>
+        <p>Sube tu CSV o captura tus posiciones en segundos. Nexo las mantiene al día con <strong>precio de mercado automático</strong>, igual que las demás.</p>
+      </div>
+      <div class="level">
+        <span class="level-tag lvl-d">Nivel D</span>
+        <h3>Inmuebles, oro, cold wallet → manual</h3>
+        <p>Bienes que no viven en ninguna app. Les pones un valor y Nexo lo <strong>actualiza</strong> con referencias de mercado cuando las hay.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ VERÁS -->
+<section class="section" id="producto">
+  <div class="container">
+    <span class="kicker">Qué verás</span>
+    <h2>Un panel que contesta las preguntas que nadie te contesta</h2>
+
+    <!-- Mockup del dashboard -->
+    <div class="mockup" role="img" aria-label="Vista previa del panel de Nexo">
+      <div class="mockup-bar"><span></span><span></span><span></span></div>
+      <div class="mockup-body">
+        <div class="mk-top">
+          <div>
+            <small>Patrimonio total</small>
+            <strong>$1,284,500 <em>MXN</em></strong>
+            <span class="up">▲ 2.4% este mes</span>
+          </div>
+          <div class="mk-mini">
+            <small>Rendimiento neto (TIR)</small>
+            <strong class="up">+14.8%</strong>
+          </div>
+          <div class="mk-mini">
+            <small>Efectivo ocioso</small>
+            <strong class="warn">18.2%</strong>
+          </div>
+        </div>
+        <div class="mk-charts">
+          <div class="mk-donut">
+            <div class="donut"></div>
+            <ul>
+              <li><i style="background:#2563eb"></i> Renta variable 38%</li>
+              <li><i style="background:#10b981"></i> Cripto 21%</li>
+              <li><i style="background:#8b5cf6"></i> CETES 16%</li>
+              <li><i style="background:#f59e0b"></i> Efectivo 18%</li>
+              <li><i style="background:#ef4444"></i> Inmueble 7%</li>
+            </ul>
+          </div>
+          <div class="mk-bars">
+            <div class="bar"><span>Renta variable</span><div><i style="width:38%"></i></div></div>
+            <div class="bar"><span>Cripto</span><div><i style="width:21%"></i></div></div>
+            <div class="bar"><span>CETES</span><div><i style="width:16%"></i></div></div>
+            <div class="bar"><span>Efectivo</span><div><i style="width:18%"></i></div></div>
+            <div class="bar"><span>Inmueble</span><div><i style="width:7%"></i></div></div>
+          </div>
+        </div>
+        <div class="mk-alert">
+          ⚠️ Tu efectivo superó el 15% que definiste. ¿Quieres revisarlo?
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-3 features">
+      <article class="card">
+        <div class="card-ico">🧭</div>
+        <h3>Patrimonio total y asignación</h3>
+        <p>Un número claro y cómo está repartido. Sin sumar cinco apps a mano ni dudar de tu propio Excel.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">📈</div>
+        <h3>Rendimiento real, neto de comisiones</h3>
+        <p>TIR ponderada por el dinero que de verdad metiste, descontando comisiones y tipo de cambio. La cifra que tu broker no te muestra.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">🔔</div>
+        <h3>Alertas de concentración</h3>
+        <p>“Estás muy concentrado en tecnología”, “tu efectivo superó el límite”. Reglas tuyas, avisos automáticos por correo.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">📄</div>
+        <h3>Reporte para tu contador</h3>
+        <p>Plusvalías y minusvalías del año en PDF o Excel. Lo mandas tal cual y te ahorras la maratón de marzo.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">💱</div>
+        <h3>Todo en una moneda</h3>
+        <p>Pesos, dólares y cripto convertidos a la misma unidad, con el tipo de cambio del día. Fin a la conversión mental.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">🔒</div>
+        <h3>Solo lectura, siempre</h3>
+        <p>Nexo no mueve dinero, no ejecuta operaciones y no te ofrece productos. Solo ves. Tú decides.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVACIDAD -->
+<section class="section section-dark" id="privacidad">
+  <div class="container narrow">
+    <span class="kicker">Privacidad y conflicto de interés</span>
+    <h2>No ganamos cuando tú operas. Ganamos cuando te suscribes.</h2>
+    <p class="section-lead">
+      La mayoría de las apps financieras te cobran por operar o te venden productos. Nexo no:
+      su único negocio es tu suscripción. Eso significa que nuestro incentivo es que <em>veas</em> mejor,
+      no que <em>operes</em> más.
+    </p>
+    <div class="grid-3">
+      <article class="dark-card">
+        <h3>No tocamos tu dinero</h3>
+        <p>Nexo no tiene permiso para transferir, comprar ni vender. Las conexiones son de solo lectura.</p>
+      </article>
+      <article class="dark-card">
+        <h3>No vendemos tus datos</h3>
+        <p>Tu información de patrimonio no se vende ni se cede a terceros. Es la razón por la que confías.</p>
+      </article>
+      <article class="dark-card">
+        <h3>No somos tu asesor</h3>
+        <p>Te mostramos datos y análisis. Las decisiones son tuyas, y así lo decimos desde el primer día.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PRECIOS -->
+<section class="section" id="precios">
+  <div class="container">
+    <span class="kicker">Precios</span>
+    <h2>Cobra desde el día uno, pero deja probar el valor</h2>
+    <p class="section-lead">Precios en pesos mexicanos. Sin tarjeta para empezar.</p>
+
+    <div class="pricing">
+      <article class="price-card">
+        <h3>Gratis</h3>
+        <div class="price">$0 <small>para siempre</small></div>
+        <ul>
+          <li>2 conexiones de activos</li>
+          <li>Patrimonio total y asignación</li>
+          <li>Precio de mercado automático</li>
+          <li>Historial de 12 meses</li>
+        </ul>
+        <a href="#lista" class="btn btn-outline">Empezar gratis</a>
+      </article>
+
+      <article class="price-card featured">
+        <span class="tag">Para ti</span>
+        <h3>Nexo Pro</h3>
+        <div class="price">$149 <small>MXN/mes</small></div>
+        <div class="price-alt">$1,290 MXN/año (2 meses gratis)</div>
+        <ul>
+          <li>Conexiones ilimitadas</li>
+          <li>Rendimiento neto (TIR ponderada)</li>
+          <li>Alertas personalizadas</li>
+          <li>Reportes PDF/Excel para tu contador</li>
+          <li>Historial completo e importación CSV</li>
+          <li>Soporte prioritario</li>
+        </ul>
+        <a href="#lista" class="btn btn-lg">Unirme a la lista</a>
+        <p class="price-note">Los primeros 200 registrados pagan <strong>$79/mes el primer año</strong>.</p>
+      </article>
+
+      <article class="price-card">
+        <h3>Reportes</h3>
+        <div class="price">$49 <small>MXN/mes</small></div>
+        <div class="price-alt">Solo para tu contador</div>
+        <ul>
+          <li>Hasta 20 reportes PDF/Excel al año</li>
+          <li>Plusvalías y minusvalías del periodo</li>
+          <li>Exportación lista para declarar</li>
+          <li>Sin conexiones: capturas tus posiciones</li>
+        </ul>
+        <a href="#lista" class="btn btn-outline">Empezar con reportes</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt" id="faq">
+  <div class="container narrow">
+    <span class="kicker">Preguntas frecuentes</span>
+    <h2>Lo que probablemente estás pensando</h2>
+
+    <details class="faq">
+      <summary>¿Nexo puede mover o gastar mi dinero?</summary>
+      <p>No. Todas las conexiones son de solo lectura: Nexo puede <em>ver</em> posiciones y saldos, nunca transferir, comprar ni vender. Ni siquiera tienes que darnos tu contraseña.</p>
+    </details>
+    <details class="faq">
+      <summary>Mi broker o mi banco no está soportado. ¿Sirve?</summary>
+      <p>Sí. Ese es el Nivel C: subes un CSV o capturas tus posiciones en segundos y Nexo las mantiene al día con precio de mercado automático. La app tiene que ser útil aunque no exista API para tu banco.</p>
+    </details>
+    <details class="faq">
+      <summary>¿Cómo calculan el rendimiento “neto”?</summary>
+      <p>Con TIR (tasa interna de retorno) ponderada por los flujos de dinero: cuándo metiste cuánto, cuánto sacaste, comisiones pagadas y tipo de cambio. Es distinto de “subió 20%” porque no descuenta el tiempo ni el dinero que entró tarde.</p>
+    </details>
+    <details class="faq">
+      <summary>¿Venden mis datos o me van a ofrecer productos financieros?</summary>
+      <p>Ninguna de las dos cosas. Nexo no vende información y no tiene productos que venderte. Su único negocio es tu suscripción.</p>
+    </details>
+    <details class="faq">
+      <summary>¿Cuándo sale y cuánto va a costar?</summary>
+      <p>Estamos en lista de espera. Los registrados entran primero a la beta y se llevan el precio de fundador: $79/mes durante el primer año en Nexo Pro.</p>
+    </details>
+    <details class="faq">
+      <summary>¿Dan recomendaciones de inversión?</summary>
+      <p>No. Nexo es una herramienta de visualización y análisis: te muestra qué tienes, cómo está y cómo se comporta. Las decisiones son tuyas.</p>
+    </details>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final" id="lista">
+  <div class="container narrow">
+    <h2>Empieza por saber cuánto tienes</h2>
+    <p>Déjanos tu correo y te avisamos cuando abra la beta. Sin spam, sin tarjeta, sin compromiso.</p>
+    <form class="waitlist" id="waitlist-form-2" novalidate>
+      <input type="email" id="email-2" name="email" placeholder="tu@correo.com" required autocomplete="email" aria-label="Tu correo electrónico">
+      <button type="submit" class="btn btn-lg">Quiero mi lugar</button>
+    </form>
+    <p class="form-msg" id="form-msg-2" role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <span class="logo"><span class="logo-mark" aria-hidden="true"></span> Nexo</span>
+      <p>Orden para tu patrimonio. Hecho en México.</p>
+    </div>
+    <nav>
+      <a href="#problema">El problema</a>
+      <a href="#como">Cómo funciona</a>
+      <a href="#precios">Precios</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#" id="privacy-link">Aviso de privacidad</a>
+    </nav>
+    <p class="legal">
+      Nexo es una herramienta de visualización y análisis financiero. No es asesoría de inversión,
+      no ejecuta operaciones y no recomienda productos. Los datos mostrados son informativos.
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
